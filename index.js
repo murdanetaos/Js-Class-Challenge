@@ -1,10 +1,9 @@
-function filterEven(x){
-    return numbers.filter(function (numbers){
-      return  numbers % 2 == 0
-});
+function filterEven(numbers){
+    return numbers.filter(function (number){
+      return number % 2 === 0 && number >= 0;
+    });
+  }
 
-}
-
-let numbers = [1,2,3,4,5,6]
+let numbers = [-1,-2,-3,4,-5,6]
 let evenNumbers = filterEven(numbers)
 console.log(evenNumbers)
